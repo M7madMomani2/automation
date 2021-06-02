@@ -87,16 +87,15 @@ for groups in emailRegex.findall(text):
 phones.sort()
 emails.sort()
 
-with open("phone_numbers.txt", "w+") as f:
+with open("assets/phone_numbers.txt", "w+") as f:
     
     for element in phones:
      f.write(element + "\n")
 
-with open("emails.txt", "w+") as f:
+with open("assets/emails.txt", "w+") as f:
     
     for element in emails:
      f.write(element + "\n")
-
 
 print("="*140)
 print(len(phones))
